@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Регистрация</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-4 col-sm-3 col-xs-3">
+		</div>
+		<div class="form col-md-4 col-sm-6 col-xs-6">
+			<h1 class="form__title">Пример формы</h1>
+			<p class="form__text"><span class="form__star">*</span> - обязательные для заполнения поля</p>
+			<form action="#" id="registration-form">
+				<label for="country" class="form__label">Страна*</label>
+				<input name="country" type="text" class="form__item form__item--country" id="country" data-validation="required" 
+				data-validation-error-msg="не все поля заполнены">
+				<label for="city" class="form__label">Выберите город*</label>
+				<select name="city" class="form__item form__item--city"  data-validation="required" 
+				data-validation-error-msg="не все поля заполнены" id="city" value=''>
+				<option value=""></option>
+				<option value="Москва">Москва</option>
+				<option value="Санкт-Петербург">Санкт-Петербург</option>
+				<option value="Новосибирск">Новосибирск</option>
+				<option value="Казань">Казань</option>
+				<option value="Екатеринбург">Екатеринбург</option>
+			</select>
+			<label for="name" class="form__label">ФИО</label>
+			<input type="text" class="form__item form__item--name" id="name" name="name">
+			<label for="login" class="form__label">Логин*</label>			
+			<input type="text" class="form__item form__item--login" name="login" data-validation="required" 
+			data-validation-error-msg="не все поля заполнены" id="login">
+			<label for="password" class="form__label">Пароль*</label>
+			<input type="password" class="form__item form__item--password" name="pass_confirmation" 
+			data-validation-strength="2" data-validation="required" 
+			data-validation-error-msg="не все поля заполнены" id="password">
+			<button class="form__button" type="submit">Отправить</button>
+		</form>
+	</div>
+	<div class="col-md-4 col-sm-3 col-xs-3">
+	</div>
+</div>
+
+</body>
+</html>
